@@ -18,6 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./specialties.css" />
   </head>
   <body>
     <header class="main-header">
@@ -28,9 +29,9 @@
         <button id="toggle-menu" class="hamburger-menu">&#9776;</button>
         <div class="nav-links">
           <ul>
-            <li><a href="#menu">Menu</a></li>
+            <li><a href="#hero">Home</a></li>
             <li><a href="#about-us">About</a></li>
-            <li><a href="#cart">Cart</a></li>
+            <li><a href="#menu">Menu</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -52,7 +53,6 @@
         </div>
       </section>
 
-      <!-- <h1>Website Name</h1> -->
       <section class="about-us" id="about-us">
         <div class="about-us-content">
           <h2>About us</h2>
@@ -85,10 +85,60 @@
       </section>
 
       <section class="menu" id="menu">
-        <h2>Our Menu</h2>
-        <div>
-          <img src="" alt="" id="menu-image" />
-          <p id="text"></p>
+        <h2>Our Specialties</h2>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="./assets/ale1.png"
+              alt="features a single craft beer bottle, a pale ale."
+              class="ale"
+            />
+            <div class="ale-content">
+              <h4>Amber Whisper Pale Ale</h4>
+              <p>
+                A light amber ale that offers a perfect balance of malt
+                sweetness and hop bitterness. Brewed with a blend of barley,
+                caramel malts, and a hint of citrus hops, it delivers a smooth,
+                refreshing taste with a slightly fruity aroma. Perfect for a
+                relaxed afternoon.
+              </p>
+              <p>7.5 €</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/ale2.png"
+              alt="Features a single craft beer bottle, a stout. The bottle is dark and rich in color, with a minimalist and modern label."
+              class="ale"
+            />
+            <div class="ale-content">
+              <h4>Midnight Muse Stout</h4>
+              <p>
+                This rich, dark stout boasts deep flavors of roasted coffee and
+                dark chocolate. Crafted with roasted barley, black malts, and a
+                touch of creaminess, it's a bold choice for those who appreciate
+                a strong, flavorful beer.
+              </p>
+              <p>6 €</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/ale3.png"
+              alt="Features a single craft beer bottle, a fruity IPA. The bottle is vibrant in appearance, with a colorful and artistic label."
+              class="ale"
+            />
+            <div class="ale-content">
+              <h4>Sunburst IPA</h4>
+              <p>
+                A vibrant, fruity IPA bursting with the flavors of tropical
+                fruits and a floral aroma. Its lively character comes from a
+                unique blend of hops and a subtle malt base, making it both
+                refreshing and invigorating.
+              </p>
+              <p>10 €</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -117,7 +167,7 @@
             </li>
           </ul>
           <p>Address: ----- ----- ----- -- ---- ----</p>
-          <p>Phone-number: 01234567890 </p>
+          <p>Phone-number: 01234567890</p>
         </div>
       </div>
       <p class="copyright">© 2023 Brewery Inc.</p>

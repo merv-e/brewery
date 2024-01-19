@@ -85,6 +85,11 @@ p {
   p {
     font-size: small;
   }
+
+  .btn {
+    padding: 10px;
+    font-size: small;
+  }
 }
 
 /* NAVBAR */
@@ -165,13 +170,25 @@ p {
   height: auto;
 }
 
+/*  
+bu hale getir? 
+aşağıdakini
+
+background-image: url("./assets/restaurant inner.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  */
+
 .hero-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: wheat;
+  /* background-color: #333333; */
+  backdrop-filter: blur(10px);
   max-width: 90%;
+  padding: 0 20px;
 }
 
 .hero-content header {
@@ -217,8 +234,6 @@ p {
   }
 }
 
-
 /* Menu */
 .menu {
-
 }
