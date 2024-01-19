@@ -1,4 +1,3 @@
-/* GENERAL */
 * {
   box-sizing: border-box;
 }
@@ -170,14 +169,7 @@ p {
   height: auto;
 }
 
-/*  
-bu hale getir? 
-aşağıdakini
 
-background-image: url("./assets/restaurant inner.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  */
 
 .hero-content {
   position: absolute;
@@ -185,7 +177,6 @@ background-image: url("./assets/restaurant inner.jpg");
   left: 50%;
   transform: translate(-50%, -50%);
   color: wheat;
-  /* background-color: #333333; */
   backdrop-filter: blur(10px);
   max-width: 90%;
   padding: 0 20px;

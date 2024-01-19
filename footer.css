@@ -25,12 +25,11 @@
 }
 
 .social-links a {
-  color: yellow;
   font-size: large;
+  color: #fff;
 }
 
 .social-links a:hover {
-  background-color: brown;
   padding: 10px 0px;
 }
 
