@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +17,7 @@ body {
   align-items: center;
   margin: 0;
   color: #333333;
+  font-family: "Work Sans", sans-serif;
 }
 
 main {
@@ -35,7 +38,7 @@ main {
   color: #333333;
 
   font-size: large;
-  font-weight: 700;
+  font-weight: 400;
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -100,7 +103,7 @@ p {
   padding: 10px 20px;
   background-color: #ffd700;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -115,6 +118,7 @@ p {
 
 .nav-links a {
   color: #333333;
+  font-weight: 400;
 }
 
 .nav-links a:hover {
@@ -169,15 +173,13 @@ p {
   height: auto;
 }
 
-
-
 .hero-content {
   position: absolute;
+  backdrop-filter: blur(3px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: wheat;
-  backdrop-filter: blur(10px);
   max-width: 90%;
   padding: 0 20px;
 }
@@ -187,7 +189,7 @@ p {
 }
 
 .hero-content p {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 /* ABOUT-US */

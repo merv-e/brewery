@@ -1,8 +1,8 @@
 .contact {
   display: flex;
   flex-direction: column;
-  background-color: black;
-  color: azure;
+  background-color: #ffa500;
+  color: black;
   width: 100%;
   padding: 20px;
 }
@@ -17,8 +17,6 @@
 }
 
 .random-location {
-  /* width: 100%;
-    height: auto; */
   width: 500px;
   height: 350px;
 }
@@ -31,18 +29,19 @@
 
 .links-and-socials ul {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   padding: 0 0 1.5rem 0;
   gap: 2rem;
 }
 
 .social-links a {
   font-size: large;
-  color: #fff;
+  color: black;
 }
 
 .social-links a:hover {
   padding: 10px 0px;
+  color: wheat;
 }
 
 .copyright {
