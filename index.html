@@ -8,10 +8,7 @@
     <!-- update title along with the description and author meta tags -->
     <title>Cafe-bar-restaurant template</title>
     <meta name="description" content="brief description" />
-    <meta
-      name="author"
-      content="website's name"
-    />
+    <meta name="author" content="website's name" />
 
     <!-- Open Graph Protocol -->
     <meta property="og:title" content="description" />
@@ -23,40 +20,43 @@
   </head>
   <body>
     <header class="main-header">
-      <!-- website name or logo -->
       <div>
         <img src="" alt="logo of the website" />
-        <!-- <p>Header</p> -->
       </div>
       <nav id="navbar">
-        <ul>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Cart</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <!-- <li><a href="javascript:void(0);" onclick="toggle()" class="hamburger-menu"> &#9776;</a></li> -->
-        </ul>
+        <button id="toggle-menu" class="hamburger-menu">&#9776;</button>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-    
+
     <main>
       <section id="hero">
-        <img src="./assets/restaurant inner.jpg" alt="a picture of the restaurant" />
-       <div class="hero-content">
-         <header>
-           <h2>Discover Our Craft Beers</h2>
-           <p>Discover the finest craft beers in town</p>
+        <img
+          src="./assets/restaurant inner.jpg"
+          alt="a picture of the restaurant"
+        />
+        <div class="hero-content">
+          <header>
+            <h2>Discover Our Craft Beers</h2>
+            <p>Discover the finest craft beers in town</p>
           </header>
           <a href="#about-us" class="about-link">Learn More About Us</a>
         </div>
       </section>
-      
+
       <!-- <h1>Website Name</h1> -->
       <article>
         <h2></h2>
         <img src="" alt="" />
       </article>
-      
+
       <article>
         <h2></h2>
         <img src="" alt="" />
@@ -64,8 +64,7 @@
       </article>
     </main>
 
-    <footer>
-    </footer>
+    <footer></footer>
     <script src="./script.js"></script>
   </body>
 </html>

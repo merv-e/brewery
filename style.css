@@ -14,39 +14,6 @@ body {
   /* overflow: hidden; */
 }
 
-/* NAVBAR */
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 20px;
-  background-color: #FFD700;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.navbar {
-  /*position: sticky;
-   overflow: hidden; */
-}
-
-.main-header ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.main-header li {
-  list-style: none;
-}
-
-.main-header a {
-  text-decoration: none;
-  color: #333333;
-}
-
 /* main {
   display: flex;
   flex-direction: column;
@@ -54,14 +21,82 @@ body {
   align-items: center;
 } */
 
+/* NAVBAR */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #ffd700;
+  font-size: 20px;
+  font-weight: 600;
+
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Ensure it appears above other content */
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-links ul {
+    display: none;
+  }
+
+  .main-header {
+    position: relative;
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-links ul.show {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    top: 30px; 
+    right: 0;
+    width: 100%;
+    background-color: #FFD700; 
+    padding: 10px 20px;
+    z-index: 1;
+  }
+}
+
+/* HERO */
 #hero {
   position: relative;
   text-align: center;
-  overflow: hidden; /* Prevent content overflow */
+  overflow: hidden;
 }
 
 #hero img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -87,33 +122,31 @@ body {
   font-weight: 700;
 }
 
-/* Add media query for smaller screens */
 @media screen and (max-width: 768px) {
   .hero-content {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px;
   }
   .hero-content h2 {
-    font-size: 2rem; /* Adjust font size for smaller screens */
+    font-size: 2rem;
   }
   .hero-content p {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 1rem;
   }
 }
 
-/* Add this to your existing CSS */
 .about-link {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    background-color: #FFA500; 
-    color: black;
-    font-size: medium;
-    font-weight: 700;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #ffa500;
+  color: black;
+  font-size: medium;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .about-link:hover {
-    background-color: #FFD700; /* Change color on hover */
+  background-color: #ffd700;
 }
