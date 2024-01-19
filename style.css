@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
   box-sizing: border-box;
 }
@@ -13,29 +14,37 @@ body {
   /* overflow: hidden; */
 }
 
-header {
+/* NAVBAR */
+.main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 10px 20px;
-  background-color: grey;
+  background-color: #FFD700;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-ul {
+.navbar {
+  /*position: sticky;
+   overflow: hidden; */
+}
+
+.main-header ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-li {
+.main-header li {
   list-style: none;
 }
 
-a {
+.main-header a {
   text-decoration: none;
-  color: black;
+  color: #333333;
 }
 
 /* main {
@@ -45,3 +54,66 @@ a {
   align-items: center;
 } */
 
+#hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+#hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: wheat;
+  max-width: 90%;
+}
+
+.hero-content header {
+  margin: 0;
+}
+
+.hero-content h2 {
+  font-size: 4rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  .hero-content h2 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+  .hero-content p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Add this to your existing CSS */
+.about-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #FFA500; 
+    color: black;
+    font-size: medium;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-link:hover {
+    background-color: #FFD700; /* Change color on hover */
+}
