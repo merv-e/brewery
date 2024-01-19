@@ -75,8 +75,13 @@ p {
     font-size: xx-large;
   }
   h2 {
+    font-size: x-large;
+  }
+
+  h3 {
     font-size: medium;
   }
+
   p {
     font-size: small;
   }

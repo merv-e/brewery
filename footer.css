@@ -8,38 +8,46 @@
 }
 
 .contact-content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .links-and-socials {
-    text-align: left;
-    width: 50%;
+  text-align: left;
+  width: 50%;
 }
 
 .links-and-socials ul {
-  display:flex;
+  display: flex;
   justify-content: start;
   padding: 0 0 1.5rem 0;
   gap: 2rem;
 }
 
 .social-links a {
-    color:yellow;
-    font-size: large;
+  color: yellow;
+  font-size: large;
 }
 
 .social-links a:hover {
-    background-color: brown;
-    padding: 10px 0px;
+  background-color: brown;
+  padding: 10px 0px;
 }
 
 .map {
-    width: 50%;
+  width: 50%;
 }
 
 .copyright {
-    text-align: right;
-    font-size: 15px;
-    margin: -2px;
+  text-align: right;
+  font-size: small;
+  margin: -2px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
