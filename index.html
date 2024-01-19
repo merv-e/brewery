@@ -17,6 +17,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./footer.css" />
   </head>
   <body>
     <header class="main-header">
@@ -27,10 +28,10 @@
         <button id="toggle-menu" class="hamburger-menu">&#9776;</button>
         <div class="nav-links">
           <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Cart</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -44,27 +45,64 @@
         />
         <div class="hero-content">
           <header>
-            <h2>Discover Our Craft Beers</h2>
+            <h1>Discover Our Craft Beers</h1>
             <p>Discover the finest craft beers in town</p>
           </header>
-          <a href="#about-us" class="about-link">Learn More About Us</a>
+          <a href="#about-us" class="btn">Learn More About Us</a>
         </div>
       </section>
 
       <!-- <h1>Website Name</h1> -->
-      <article>
-        <h2></h2>
-        <img src="" alt="" />
-      </article>
+      <section class="about-us" id="about-us">
+        <div class="about-us-content">
+          <h2>About us</h2>
+          <p>
+            Established in the year 1972, our brewery is a family-owned business
+            rooted in a passion for craft brewing. Over the years, we've
+            dedicated ourselves to creating exceptional and unique brews that
+            captivate the palates of beer enthusiasts worldwide.
+          </p>
+          <p>
+            What sets us apart is our commitment to quality and innovation. We
+            take pride in experimenting with a wide range of ingredients and
+            brewing techniques, resulting in a diverse selection of
+            award-winning beers that have garnered recognition on a global
+            scale.
+          </p>
+          <p>
+            As a family business, we believe in the power of tradition and
+            hospitality. Our brewery has become a welcoming destination for beer
+            lovers from all corners of the globe. Whether you're a seasoned
+            connoisseur or a casual enthusiast, our brewery offers an inviting
+            atmosphere and a chance to explore the rich flavors of our craft
+            creations.
+          </p>
+          <a href="reservation.html" class="btn">Reserve a Table</a>
+        </div>
+        <div>
+          <img src="./assets/barrels.jpg" alt="four barrels" />
+        </div>
+      </section>
 
-      <article>
+      <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <div>
+          <img src="" alt="" id="menu-image" />
+          <p id="text"></p>
+        </div>
+      </section>
+
+      <section>
+        <!-- soem img and reserve your table -->
         <h2></h2>
         <img src="" alt="" />
         <p></p>
-      </article>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer id="contact">
+
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
