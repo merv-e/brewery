@@ -252,3 +252,169 @@ p {
     width: 100%;
   }
 }
+
+
+/* SPECIALTIES */
+.cards {
+  display: flex;
+  max-width: 100%;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 750px;
+  border-radius: 5px;
+  width: 33.3%;
+  background-color: #000000;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.ale-content {
+  padding: 0 1.5rem;
+}
+
+.product-name-and-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  border-radius: 5px;
+  background-color: #ffa500;
+  padding: 5px 10px;
+  color: rgb(28, 27, 27);
+}
+
+.ale-content h4 {
+  font-size: 1.3rem;
+}
+
+.ale-content div + p {
+  text-align: left;
+  font-weight: 300;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .ale-content h4 {
+    font-size: 1rem;
+    line-break:strict;
+  }
+
+  .product-name-and-price {
+    gap: 10px;
+  }
+}
+
+
+/* FOOTER */
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffa500;
+  color: black;
+  width: 100%;
+  padding: 20px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.map {
+  width: 50%;
+}
+
+.random-location {
+  width: 500px;
+  height: 350px;
+}
+
+.links-and-socials {
+  text-align: left;
+  width: 50%;
+}
+
+.links-and-socials ul {
+  display: flex;
+  justify-content: start;
+  padding: 0 0 1.5rem 0;
+  gap: 2rem;
+}
+
+.social-links a {
+  font-size: large;
+  color: black;
+}
+
+.social-links a:hover {
+  padding: 10px 0px;
+  color: wheat;
+}
+
+.copyright {
+  text-align: right;
+  font-size: small;
+  margin: -2px;
+}
+
+@media screen and (max-width: 1071px) {
+  .contact-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+  }
+  
+  .map {
+    width: 100%;
+  }
+  
+  .links-and-socials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links-and-socials ul, .links-and-socials p{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .random-location {
+    width: 100%;
+    height: 75vw;
+    padding: 20px;
+  }
+
+  .copyright {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+}
