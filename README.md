@@ -23,8 +23,4 @@ This project is a website designed for a brewery, showcasing its unique craft be
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md).
-
-## Author
-
-- [Merve B. Üstün](https://github.com/merv-e)
+This project is licensed under the [MIT License](https://github.com/merv-e/brewery/blob/main/LICENSE).
